@@ -1,0 +1,169 @@
+.header {
+  border-bottom: 3px solid #be6213;
+  text-align: center; }
+
+.header-logo {
+  width: 50%; }
+
+.header-menu-icono {
+  width: 6.3%; }
+
+.header-menu-text {
+  color: #be6213;
+  display: inline;
+  font-family: "Raleway", sans-serif; }
+
+.header-menu {
+  padding-top: 8%;
+  padding-bottom: 4.3%; }
+
+.copyright {
+  margin-top: 2%;
+  width: 63px; }
+
+.footer {
+  border-top: 3px solid #be6213;
+  text-align: center; }
+
+.img-media-social {
+  margin-top: 4%;
+  width: 28px; }
+
+.logo-footer {
+  padding-top: 2%;
+  width: 91px; }
+
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.list-menu-link-options {
+  color: #be7f13;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none; }
+
+.list-menu-options + .list-menu-options {
+  margin-top: 3%; }
+
+.avatar-name {
+  color: #be6213;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15.38px;
+  display: inline-block;
+  margin: 6% 18% 0 0; }
+
+.avatar-date {
+  padding: 0;
+  margin: 0;
+  color: #be6213;
+  display: inline-block;
+  font-size: 12px; }
+
+.avatar-bio {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 6% 4.5%; }
+
+.banner1 {
+  padding: 4.3% 0;
+  width: 100%; }
+
+.banner2 {
+  width: 100%;
+  padding: 4.3% 0; }
+
+.btn-post {
+  border: 1px solid #e4a930;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 3%;
+  margin-left: 38%;
+  margin-bottom: 5%; }
+
+.comentario {
+  margin-left: 50px; }
+
+.container-post {
+  border: 1px solid #068478;
+  border-radius: 15px;
+  margin: 5% 5.3% 5% 5.3%; }
+
+.container-post-avatar {
+  border-radius: 50%;
+  float: left;
+  height: 59px;
+  padding: 2%;
+  width: 59px; }
+
+.iconos-post {
+  width: 9%;
+  padding-bottom: 2%; }
+
+.iconos-post + .iconos-post {
+  margin-left: 40px; }
+
+.img-book {
+  width: 66%;
+  padding: 0 17%; }
+
+.subTitle {
+  color: #0b7075;
+  font-family: "Libre Baskerville", serif;
+  font-size: 17.38px;
+  margin-bottom: 2%;
+  padding: 0 4.5%; }
+
+.share {
+  width: 8%; }
+
+.text {
+  font-family: "Raleway", sans-serif;
+  font-size: 12.38px;
+  padding: 0 4.5%; }
+
+.title-book {
+  color: #0b7075;
+  font-family: "Libre Baskerville", serif;
+  font-size: 18.38px;
+  margin-bottom: 5%;
+  text-align: center; }
+
+.info-post-sibar {
+  font-family: "Raleway", sans-serif;
+  padding: 0 4.5%; }
+
+.link-post-sibar {
+  color: #e4a930;
+  font-size: 12px;
+  text-decoration: none; }
+
+.sibar {
+  background-color: #068478;
+  border-radius: 15px;
+  margin: 10% 16px 10% 16px;
+  padding-bottom: 3%; }
+
+.sibar-name {
+  font-family: "Libre Baskerville", serif;
+  padding: 5%;
+  margin-top: 0; }
+
+.sibar-post {
+  background-color: #e4a930;
+  border: 1px solid #e4a930;
+  border-radius: 15px;
+  margin: 0 16px 5% 16px; }
+
+.title-sibar {
+  color: #0b7075;
+  font-size: 20.38px;
+  margin: 0;
+  padding: 5% 0;
+  text-align: center; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
