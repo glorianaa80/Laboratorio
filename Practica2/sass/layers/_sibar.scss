@@ -1,0 +1,38 @@
+.info-post-sibar {
+  font-family: "Raleway", sans-serif;
+  padding: 0 4.5%;
+}
+
+.link-post-sibar {
+  color: $amPrincipal;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.sibar {
+  background-color: $azSecundario;
+  border-radius: 15px;
+  margin: 10% 16px 10% 16px;
+  padding-bottom: 3%;
+}
+
+.sibar-name {
+  font-family: "Libre Baskerville", serif;
+  padding: 5%;
+  margin-top: 0;
+}
+
+.sibar-post {
+  background-color: $amPrincipal;
+  border: 1px solid $amPrincipal;
+  border-radius: 15px;
+  margin: 0 16px 5% 16px;
+}
+
+.title-sibar {
+  color: $azPrincipal;
+  font-size: 20.38px;
+  margin: 0;
+  padding: 5% 0;
+  text-align: center;
+}
