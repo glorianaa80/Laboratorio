@@ -1,0 +1,146 @@
+.avatar-name {
+  color: $nPrincipal;
+  font-family: "Libre Baskerville", serif;
+  font-size: 15.38px;
+  display: inline-block;
+  margin: 6% 18% 0 0;
+}
+
+.avatar-date {
+  padding: 0;
+  margin: 0;
+  color: $nPrincipal;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.avatar-bio {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 9% 4.5%;
+}
+
+.banner1 {
+  padding: 4.3% 0;
+  width: 100%;
+}
+
+.banner2 {
+  width: 100%;
+  padding: 4.3% 0;
+}
+
+.btn-post {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 3%;
+  margin-left: 34%;
+  margin-bottom: 5%;
+}
+
+.comentario {
+  margin-left: 50px;
+}
+
+.container-post {
+  border: 1px solid $azSecundario;
+  border-radius: 15px;
+  margin: 0 5.3% 0 5.3%;
+}
+
+.container-post-avatar {
+  border-radius: 50%; 
+  float: left;
+  height: 59px;
+  padding: 2%;
+  width: 59px;
+}
+
+.iconos-post {
+  width: 9%;
+  padding-bottom: 2%;
+}
+
+.iconos-post + .iconos-post {
+  margin-left: 40px;
+}
+
+.img-book {
+  width: 66%;
+  padding: 0 17%;
+}
+
+.info-post-related {
+  font-family: "Raleway", sans-serif;
+  padding: 0 4.5%;
+}
+
+.link-post-related {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.related {
+  background-color: $azSecundario;
+  border-radius: 15px;
+  margin: 10% 16px 10% 16px;
+  padding-bottom: 3%;
+}
+
+.related-avatar {
+  border-radius: 50%; 
+  height: 59px;
+  padding: 2%;
+  margin-left: 34%;
+  width: 59px;
+}
+
+.related-name {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  margin-top: 0;
+}
+
+.related-post {
+  background-color: $amPrincipal;
+  border: 1px solid $amPrincipal;
+  border-radius: 15px;
+  margin: 0 16px 5% 16px;
+}
+
+.subTitle {
+  color: $azPrincipal;
+  font-family: "Libre Baskerville", serif;
+  font-size: 17.38px;
+  margin-bottom: 2%;
+  padding: 0 4.5%;
+}
+
+.share {
+  width: 8%;
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+  font-size: 12.38px;
+  padding: 0 4.5%;
+}
+
+.title-book {
+  color: $azPrincipal;
+  font-family: "Libre Baskerville", serif;
+  font-size: 18.38px;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.title-related {
+  color: $amPrincipal;
+  font-size: 20.38px;
+  margin: 0;
+  padding: 5% 0;
+  text-align: center;
+}
+
