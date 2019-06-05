@@ -1,0 +1,149 @@
+// @media (min-width:$breakpoint-xl){
+//     // Nvegacion
+//     #navegacion{
+//         .navegation{
+//               background-color: $navegacion;
+//         }
+//         .tNavegador{
+//              display:none;
+//         }  
+//         .menu{
+//             padding:45px 0 40px 54px;
+//             margin: 0;
+//         }
+//         .menu li{
+//               display: inline;
+//         }
+//         .menu li + li{
+//               margin-left:30px; 
+//         }
+//         .menu a{
+//               color: $tNavegacion;
+//               text-decoration: none;
+//               font-size: $tiTuloN / $fzparem + rem;
+//               text-transform: uppercase;
+//         }
+//         .logoMenu{
+//              display: none;
+//         }
+//       } 
+//        // Banner
+//     #banner{
+//         .degradado{
+//             margin: 0;
+//             background-image: linear-gradient(to bottom right, $degradado1, $degradado2);
+//             padding-bottom: 105px;
+//         }
+//         .principal{
+//             width: 498px;
+//             color: $blanco1;
+//             font-size: $tiTuLoA / $fzparem + rem;
+//             margin: 0;
+//             padding: 115px 135px 30px 50px;
+//         }
+//         .correo{
+//             text-decoration: none;
+//             color: $blanco;
+//             padding-left: 50px;
+//             font-size: $correo4 / $fzparem + rem;
+//         }
+//         .flechas{
+//             float: right;
+//             padding-right: 464px;
+//         }
+//         .flecha1{
+//             width: 18px;
+//         }
+//     }
+//     // Text Box
+//     #text-box{
+//         .morado{
+//             background-color: $negro1;
+//             color: $texto1;
+//             font-size: $correo3 / $fzparem + rem;
+//         }
+//         .texto1{
+//             margin: 0;
+//             padding: 71px 0 71px 55px;
+//             display: inline-block;
+//         }
+//         .flecha{
+//             padding: 69.3px;
+//             background-color: $rosado;
+//             float: right;
+//         }
+//         .flecha2{
+//             width: 25px;
+//         }
+//     }
+//     // Imagenes
+//     #imagenes{
+//         .flecha3{
+//             width: 19px;
+//         }
+//         .foto1{
+//             float: left;
+//             width: 54px;
+//             background-color: $morado;
+//             margin: 0;
+//             padding: 131px 124px 132px  160px;
+//         }
+//         .img1{
+//            display: none;
+//         }
+//         .img4{
+//             width: 331px;
+//             margin: 0;
+//         }
+//         .img2{
+//             display:none;
+//         }
+//         .img3{
+//             display:none;
+//         }
+//         .foto{
+//             display: inline;
+//         }
+//     }
+//     #final{
+//         .fFinal{
+//             background-color: $tNavegacion;
+//         }
+//         .clearflix{
+//             display: block;
+//             content: "";
+//             clear: both;
+//             overflow: hidden;
+//         }
+//         .tituloS{
+//             color: $tituloS;
+//             font-size: $titulo2 / $fzparem + rem;
+//             padding: 77px;
+//             margin: 0;
+//         }
+//         .cuadro{
+//             float: left;
+//         }
+//         .texto2{
+//             width: 364px;
+//             color:$texto2;
+//             padding-left: 77px;
+//             padding-right: 77px;
+//             padding-bottom: 30px;
+//             margin: 0;
+//             font-size: $tiTuloN / $fzparem + rem;
+//         }
+//         .cuadro2{
+//             float: right;
+//         }
+//         .texto3{
+//             width: 364px;
+//             color:$texto2;
+//             padding-left: 77px;
+//             padding-right: 77px;
+//             padding-bottom: 30px;
+//             margin: 0;
+//             font-size: $tiTuloN / $fzparem + rem;
+//         }
+//     }
+// }
