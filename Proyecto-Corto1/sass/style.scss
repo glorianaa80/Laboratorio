@@ -3,98 +3,6 @@ body {
   margin: 0;
   font-family: 'B612 Mono', monospace;
 }
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70px 70px 200px 300px 0fr 1fr;
-  grid-gap: 15px;
-  background-image: url(../img/bg.jpg);
-  @media(min-width: 768px){
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 130px 70px 200px 100px 110px;
-  }
-}
-
-.img-logo {
-  justify-self: center;
-  padding-top: 20px; 
-  transform: rotate(-15deg);
-  width: 100%;
-  @media(min-width: 768px){
-    grid-column: 1/2 span;
-  }
-}
-
-.text-tour {
-  grid-column-end: 2;
-  font-size: 1.5rem;
-  padding-left: 70px;
-  text-transform: uppercase;
-  @media(min-width: 768px){
-    margin: 0;
-    grid-column: 2/2 span;
-  }
-  @media(min-width: 1024px){
-    grid-row-start:3; 
-    font-size: 2rem;
-  }
-}
-
-.name-members {
-  display: grid;
-  grid-template-columns: 164px 1fr;
-  grid-template-rows: 100px 50px;
-  @media(min-width: 768px){
-    grid-template-rows: 150px 100px;
-    padding-top: 30px;
-  }
-  @media(min-width: 1024px){
-    grid-row-start:3; 
-    grid-column-start:3; 
-  }
-}
-
-.name-avatar1 {
-  transform: rotate(-90deg);
-  font-size: 1rem;
-  padding-left: 20px;
-  margin: 0;
-  align-self: center;
-  @media(min-width: 1024px){
-    transform: rotate(0deg);
-  }
-}
-
-.name-avatar2 {
-  margin: 0;
-  font-size: 1rem;
-  padding-top: 6px;
-  @media(min-width: 1024px){
-    transform: rotate(-90deg);
-  }
-}
-
-.name-avatar3 {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 1rem;
-  align-self: end;
-  @media(min-width: 1024px){
-    padding-left:1px;
-    transform: rotate(-90deg);
-  }
-}
-
-.name-avatar4 {
-  margin: 0;
-  font-size: 1rem;
-  padding-left: 45px;
-  transform: rotate(-90deg);
-  @media(min-width: 1024px){
-    transform: rotate(0deg);
-    align-self: end;
-  }
-}
 
 .band {
   display: grid;
@@ -104,8 +12,31 @@ body {
     grid-template-rows: 200px 200px;
   }
   @media(min-width: 1024px){
+    grid-template-rows: 275px 150px;
     grid-column-start: 2;
     grid-row-start:4; 
+  }
+}
+
+.container {
+  background-image: url(../img/bg.jpg);
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 70px 200px 300px 0fr 1fr;
+  @media(min-width: 768px){
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 130px 70px 200px 100px 110px;
+  }
+}
+
+.img-logo {
+  padding-top: 20px; 
+  justify-self: center;
+  transform: rotate(-15deg);
+  width: 100%;
+  @media(min-width: 768px){
+    grid-column: 1/2 span;
   }
 }
 
@@ -130,18 +61,10 @@ body {
   }
 }
 
-.reproductor {
-  width: 100%;
-  display: inline-block;
-  @media(min-width: 768px){
-    display:none;
-  }
-}
-
 .info-location {
   grid-area: location;
-  margin: 0;
   font-size: 2rem;
+  margin: 0;
     @media(min-width: 1024px){
     writing-mode:vertical-rl;
   }
@@ -149,8 +72,8 @@ body {
 
 .info-date {
   grid-area: date;
-  margin: 0;
   font-size: 1.5rem;
+  margin: 0;
   writing-mode: vertical-lr;
   @media(min-width: 1024px){
     padding-top: 30px;
@@ -158,40 +81,164 @@ body {
   }
 }
 
+.name-members {
+  display: grid;
+  grid-template-columns: 164px 1fr;
+  grid-template-rows: 100px 50px;
+  @media(min-width: 768px){
+    grid-template-rows: 150px 100px;
+    padding-top: 30px;
+  }
+  @media(min-width: 1024px){
+    grid-column-start:3; 
+    grid-row-start:3; 
+    grid-template-rows: 100px 190px;
+  }
+}
+
+.name-avatar1 {
+  align-self: center;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1rem;
+  transform: rotate(-90deg);
+  @media(min-width: 1024px){
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    font-size: 2rem;
+    transform: rotate(0deg);
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+.name-avatar2 {
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 6px;
+  @media(min-width: 1024px){
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    font-size: 2rem;
+    transform: rotate(-90deg);
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+.name-avatar3 {
+  align-self: end;
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 18px;
+  @media(min-width: 1024px){
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    font-size: 2rem;
+    padding-left:1px;
+    transform: rotate(-90deg);
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+.name-avatar4 {
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 45px;
+  transform: rotate(-90deg);
+  @media(min-width: 1024px){
+    align-self: end;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    font-size: 2rem;
+    padding-right: 20px;
+    transform: rotate(0deg);
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+.reproductor {
+  display: inline-block;
+  width: 100%;
+  @media(min-width: 768px){
+    display:none;
+  }
+}
 .song1 {
-  grid-area: song1;
   color: white;
+  grid-area: song1;
   padding-left: 15px;
 }
 
 .song2 {
-  grid-area: song2;
   color: white;
+  grid-area: song2;
   padding-left: 15px;
 }
 
 .song3 {
-  grid-area: song3;
   color: white;
+  grid-area: song3;
   padding-left: 15px;
 }
 
 .song4 {
-  grid-area: song4;
   color: white;
+  grid-area: song4;
   padding-left: 15px;
 }
 
 .song5 {
-  grid-area: song5;
   color: white;
+  grid-area: song5;
   padding-left: 15px;
 }
 
 .info {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
   grid-template-areas:
   "location date"
   "song1 date"
@@ -199,13 +246,13 @@ body {
   "song3 date"
   "song4 date"
   "song5 date";
+  grid-template-rows: auto;
   @media(min-width: 768px){
     grid-area: 5/1/7/2;
     padding-left: 20px;
     padding-bottom: 30px;
   }
   @media(min-width: 1024px){
-    grid-template-columns: 4fr 1fr 1fr;
     grid-area: 7/1/8/2;
     grid-template-areas:
     "song1 location ."
@@ -215,6 +262,7 @@ body {
     "song5 location ."
     "date date date"
     "date date date";
+    grid-template-columns: 4fr 1fr 1fr;
   }
 }
 
@@ -223,8 +271,8 @@ body {
   text-decoration: none;
   text-align: center;
   @media(min-width: 768px){
-   grid-area: 5/2/7/3;
    align-self: center;
+   grid-area: 5/2/7/3;
   }
   @media(min-width: 1024px){
     grid-column-start:3;
@@ -237,12 +285,26 @@ body {
   text-decoration: none;
   text-align: center;
   @media(min-width: 768px){
-    grid-area: 6/2/7/3;
     align-self: end;
+    grid-area: 6/2/7/3;
   }
   @media(min-width: 1024px){
-    font-size: 1.5rem;
     grid-area: 6/3/7/4;
+    font-size: 1.5rem;
   }
 }
 
+.text-tour {
+  grid-column-end: 2;
+  font-size: 1.5rem;
+  padding-left: 70px;
+  text-transform: uppercase;
+  @media(min-width: 768px){
+    grid-column: 2/2 span;
+    margin: 0;
+  }
+  @media(min-width: 1024px){
+    grid-row-start:3; 
+    font-size: 2rem;
+  }
+}
