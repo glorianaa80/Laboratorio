@@ -1,6 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'B612 Mono', monospace; }
+
 .container {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 70px 200px 300px 0fr 1fr;
+  grid-gap: 15px;
+  background-image: url(../img/bg.jpg); }
+
+.img-logo {
+  justify-self: center;
+  padding-top: 20px;
+  transform: rotate(-15deg);
+  width: 100%; }
+
+.text-tour {
+  grid-column-end: 2;
+  font-size: 1.5rem;
+  padding-left: 70px;
+  text-transform: uppercase; }
+
+.name-members {
+  display: grid;
+  grid-template-columns: 164px 1fr;
+  grid-template-rows: 100px 50px; }
+
+.name-avatar1 {
+  transform: rotate(-90deg);
+  font-size: 1rem;
+  padding-left: 20px;
+  margin: 0;
+  align-self: center; }
+
+.name-avatar2 {
+  margin: 0;
+  font-size: 1rem;
+  padding-top: 6px; }
+
+.name-avatar3 {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 1rem;
+  align-self: end; }
+
+.name-avatar4 {
+  margin: 0;
+  font-size: 1rem;
+  padding-left: 45px;
+  transform: rotate(-90deg); }
+
+.band {
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; }
+  grid-template-rows: 100px 100px; }
+
+.img-band1 {
+  width: 90%; }
+
+.img-band {
+  width: 100%; }
+
+.img-band2 {
+  width: 99%; }
+
+.reproductor {
+  width: 100%; }
+
+.info-location {
+  grid-area: location;
+  margin: 0;
+  font-size: 2rem; }
+
+.info-date {
+  grid-area: date;
+  margin: 0;
+  font-size: 1.5rem;
+  writing-mode: vertical-rl; }
+
+.song1 {
+  grid-area: song1;
+  color: white;
+  padding-left: 15px; }
+
+.song2 {
+  grid-area: song2;
+  color: white;
+  padding-left: 15px; }
+
+.song3 {
+  grid-area: song3;
+  color: white;
+  padding-left: 15px; }
+
+.song4 {
+  grid-area: song4;
+  color: white;
+  padding-left: 15px; }
+
+.song5 {
+  grid-area: song5;
+  color: white;
+  padding-left: 15px; }
+
+.info {
+  display: grid;
+  grid-template-columns: fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "location date" "song1 date" "song2 date" "song3 date" "song4 date" "song5 date"; }
+
+.info-ticket {
+  color: black;
+  text-decoration: none;
+  text-align: center; }
+
+.info-band {
+  color: black;
+  padding-bottom: 30px;
+  text-decoration: none;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
