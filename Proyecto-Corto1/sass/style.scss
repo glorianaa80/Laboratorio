@@ -10,8 +10,8 @@ body {
   grid-gap: 15px;
   background-image: url(../img/bg.jpg);
   @media(min-width: 768px){
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 130px 70px 200px 300px 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 130px 70px 200px 100px 110px;
   }
 }
 
@@ -33,7 +33,10 @@ body {
   @media(min-width: 768px){
     margin: 0;
     grid-column: 2/2 span;
-    width: 100%;
+  }
+  @media(min-width: 1024px){
+    grid-row-start:3; 
+    font-size: 2rem;
   }
 }
 
@@ -41,6 +44,14 @@ body {
   display: grid;
   grid-template-columns: 164px 1fr;
   grid-template-rows: 100px 50px;
+  @media(min-width: 768px){
+    grid-template-rows: 150px 100px;
+    padding-top: 30px;
+  }
+  @media(min-width: 1024px){
+    grid-row-start:3; 
+    grid-column-start:3; 
+  }
 }
 
 .name-avatar1 {
@@ -49,12 +60,18 @@ body {
   padding-left: 20px;
   margin: 0;
   align-self: center;
+  @media(min-width: 1024px){
+    transform: rotate(0deg);
+  }
 }
 
 .name-avatar2 {
   margin: 0;
   font-size: 1rem;
   padding-top: 6px;
+  @media(min-width: 1024px){
+    transform: rotate(-90deg);
+  }
 }
 
 .name-avatar3 {
@@ -62,6 +79,10 @@ body {
   padding-left: 18px;
   font-size: 1rem;
   align-self: end;
+  @media(min-width: 1024px){
+    padding-left:1px;
+    transform: rotate(-90deg);
+  }
 }
 
 .name-avatar4 {
@@ -69,50 +90,72 @@ body {
   font-size: 1rem;
   padding-left: 45px;
   transform: rotate(-90deg);
+  @media(min-width: 1024px){
+    transform: rotate(0deg);
+    align-self: end;
+  }
 }
 
 .band {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
+  @media(min-width: 768px){
+    grid-template-rows: 200px 200px;
+  }
+  @media(min-width: 1024px){
+    grid-column-start: 2;
+    grid-row-start:4; 
+  }
 }
 
 .img-band1 {
   width: 90%;
-  @media(min-width: 768){
+  @media(min-width: 768px){
     width: 100%;
   }
 }
 
 .img-band {
   width: 100%;
-  @media(min-width: 768){
+  @media(min-width: 768px){
     width: 100%;
   }
 }
 
 .img-band2 {
   width: 99%;
-  @media(min-width: 768){
+  @media(min-width: 768px){
     width: 100%;
   }
 }
 
 .reproductor {
   width: 100%;
+  display: inline-block;
+  @media(min-width: 768px){
+    display:none;
+  }
 }
 
 .info-location {
   grid-area: location;
   margin: 0;
   font-size: 2rem;
+    @media(min-width: 1024px){
+    writing-mode:vertical-rl;
+  }
 }
 
 .info-date {
   grid-area: date;
   margin: 0;
   font-size: 1.5rem;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
+  @media(min-width: 1024px){
+    padding-top: 30px;
+    writing-mode:horizontal-tb;
+  }
 }
 
 .song1 {
@@ -155,15 +198,36 @@ body {
   "song2 date"
   "song3 date"
   "song4 date"
-  "song5 date"
+  "song5 date";
+  @media(min-width: 768px){
+    grid-area: 5/1/7/2;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+  @media(min-width: 1024px){
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-area: 7/1/8/2;
+    grid-template-areas:
+    "song1 location ."
+    "song2 location ."
+    "song3 location ."
+    "song4 location ."
+    "song5 location ."
+    "date date date"
+    "date date date";
+  }
 }
 
 .info-ticket {
   color:black;
   text-decoration: none;
   text-align: center;
-  @media(min-width: 768){
-    align-self: end;
+  @media(min-width: 768px){
+   grid-area: 5/2/7/3;
+   align-self: center;
+  }
+  @media(min-width: 1024px){
+    grid-column-start:3;
   }
 }
 
@@ -172,5 +236,13 @@ body {
   padding-bottom: 30px;
   text-decoration: none;
   text-align: center;
+  @media(min-width: 768px){
+    grid-area: 6/2/7/3;
+    align-self: end;
+  }
+  @media(min-width: 1024px){
+    font-size: 1.5rem;
+    grid-area: 6/3/7/4;
+  }
 }
 
