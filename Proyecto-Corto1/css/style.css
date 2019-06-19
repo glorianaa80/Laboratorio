@@ -9,18 +9,30 @@ body {
   grid-template-rows: 70px 70px 200px 300px 0fr 1fr;
   grid-gap: 15px;
   background-image: url(../img/bg.jpg); }
+  @media (min-width: 768px) {
+    .container {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 130px 70px 200px 300px 1fr; } }
 
 .img-logo {
   justify-self: center;
   padding-top: 20px;
   transform: rotate(-15deg);
   width: 100%; }
+  @media (min-width: 768px) {
+    .img-logo {
+      grid-column: 1/2 span; } }
 
 .text-tour {
   grid-column-end: 2;
   font-size: 1.5rem;
   padding-left: 70px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .text-tour {
+      margin: 0;
+      grid-column: 2/2 span;
+      width: 100%; } }
 
 .name-members {
   display: grid;
@@ -58,12 +70,21 @@ body {
 
 .img-band1 {
   width: 90%; }
+  @media (min-width: 768) {
+    .img-band1 {
+      width: 100%; } }
 
 .img-band {
   width: 100%; }
+  @media (min-width: 768) {
+    .img-band {
+      width: 100%; } }
 
 .img-band2 {
   width: 99%; }
+  @media (min-width: 768) {
+    .img-band2 {
+      width: 100%; } }
 
 .reproductor {
   width: 100%; }
@@ -106,7 +127,7 @@ body {
 
 .info {
   display: grid;
-  grid-template-columns: fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "location date" "song1 date" "song2 date" "song3 date" "song4 date" "song5 date"; }
 
@@ -114,6 +135,9 @@ body {
   color: black;
   text-decoration: none;
   text-align: center; }
+  @media (min-width: 768) {
+    .info-ticket {
+      align-self: end; } }
 
 .info-band {
   color: black;
