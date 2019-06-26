@@ -13,15 +13,28 @@
 
 <body>
   <!-- Header -->
-  <div class="header">
-    <img class="header-logo" src="img/logo.svg"
-      alt="Logo de un libro abierto que le salen figuras de colores como representando la imaginación">
-    <div class="header-menu">
-      <img class="header-menu-icono" src="img/menu.svg" alt="Logo de menu hamburguesa">
-      <p class="header-menu-text">Menú</p>
-    </div>
+  <nav class="header">
+    <button>
+      <img class="header-logo" src="img/logo.svg"
+        alt="Logo de un libro abierto que le salen figuras de colores como representando la imaginación">
+    </button>
 
-  </div>
+    <button class="header-menu" id="buttonOpen">
+      <img class="header-menu-icono" src="img/menu.svg" alt="Logo de menu hamburguesa">
+      <span class="header-menu-text">Menú</span>
+    </button>
+    <ul class="header-nav hidden" id="openNav">
+      <li> <a class="nav-options" href="">Blog</a> </li>
+      <li> <a class="nav-options" href="">Reseñas </a> </li>
+      <li> <a class="nav-options" href="">Librerias</a> </li>
+      <li> <a class="nav-options" href="">Novedades</a> </li>
+    </ul>
+
+
+  </nav>
+
+
+
 
   <!-- Container -->
   <div class="container">
@@ -29,7 +42,8 @@
       <p class="avatar-name">Daniela Ronda</p>
       <img class="container-post-avatar " src="img/avatar.jpg" alt="Imagen de un avatar para comenr¿tar en el blog">
       <p class="avatar-date">8 de mayo del 2019</p>
-      <p class="avatar-bio">Hola soy de Costa Rica y queria recomendar les este libro y espero que le cambie la vida como me lo hizo a mi.</p>
+      <p class="avatar-bio">Hola soy de Costa Rica y queria recomendar les este libro y espero que le cambie la vida
+        como me lo hizo a mi.</p>
       <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
     </div>
 
@@ -58,52 +72,54 @@
     </div>
 
     <div class="container-post">
-        <p class="avatar-name">Daniela Ronda</p>
-        <img class="container-post-avatar " src="img/avatar.jpg" alt="Imagen de un avatar para comenr¿tar en el blog">
-        <p class="avatar-date">8 de mayo del 2019</p>
-        <p class="avatar-bio">Hola soy de Costa Rica y queria recomendar les este libro y espero que le cambie la vida como me lo hizo a mi.</p>
-        <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
-      </div>
-  
-      <div class="container-post">
-        <p class="avatar-name">Melissa Rojas</p>
-        <img class="container-post-avatar " src="img/avatar2.jpg" alt="">
-        <p class="avatar-date">8 de mayo del 2019</p>
-        <p class="avatar-bio">Hoy les quiero hablar sobre el nuevo libro que descubrí lla...</p>
-        <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
-      </div>
-  
-      <div class="container-post">
-        <p class="avatar-name">Julian Castro</p>
-        <img class="container-post-avatar " src="img/avatar3.jpg" alt="">
-        <p class="avatar-date">8 de mayo del 2019</p>
-        <p class="avatar-bio">Les quiero mostrar el nuevo libro de Cassandra Clare que se titu ...</p>
-        <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
-      </div>
-  
-      <div class="container-post">
-        <p class="avatar-name">Roberto Flores</p>
-        <img class="container-post-avatar " src="img/avatar4.png" alt="">
-        <p class="avatar-date">8 de mayo del 2019</p>
-        <p class="avatar-bio">Alguien ya a leido Tú & yo, aquí, ahora de Jay Asher porque lo recom ...</p>
-        <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
-      </div>
+      <p class="avatar-name">Daniela Ronda</p>
+      <img class="container-post-avatar " src="img/avatar.jpg" alt="Imagen de un avatar para comenr¿tar en el blog">
+      <p class="avatar-date">8 de mayo del 2019</p>
+      <p class="avatar-bio">Hola soy de Costa Rica y queria recomendar les este libro y espero que le cambie la vida
+        como me lo hizo a mi.</p>
+      <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
+    </div>
 
-      <div class="container-post">
-        <p class="avatar-name">Daniela Ronda</p>
-        <img class="container-post-avatar " src="img/avatar.jpg" alt="Imagen de un avatar para comenr¿tar en el blog">
-        <p class="avatar-date">8 de mayo del 2019</p>
-        <p class="avatar-bio">Hola soy de Costa Rica y queria recomendar les este libro y espero que le cambie la vida como me lo hizo a mi.</p>
-        <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
-      </div>
-  
-      <div class="container-post">
-        <p class="avatar-name">Melissa Rojas</p>
-        <img class="container-post-avatar " src="img/avatar2.jpg" alt="">
-        <p class="avatar-date">8 de mayo del 2019</p>
-        <p class="avatar-bio">Hoy les quiero hablar sobre el nuevo libro que descubrí lla...</p>
-        <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
-      </div>
+    <div class="container-post">
+      <p class="avatar-name">Melissa Rojas</p>
+      <img class="container-post-avatar " src="img/avatar2.jpg" alt="">
+      <p class="avatar-date">8 de mayo del 2019</p>
+      <p class="avatar-bio">Hoy les quiero hablar sobre el nuevo libro que descubrí lla...</p>
+      <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
+    </div>
+
+    <div class="container-post">
+      <p class="avatar-name">Julian Castro</p>
+      <img class="container-post-avatar " src="img/avatar3.jpg" alt="">
+      <p class="avatar-date">8 de mayo del 2019</p>
+      <p class="avatar-bio">Les quiero mostrar el nuevo libro de Cassandra Clare que se titu ...</p>
+      <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
+    </div>
+
+    <div class="container-post">
+      <p class="avatar-name">Roberto Flores</p>
+      <img class="container-post-avatar " src="img/avatar4.png" alt="">
+      <p class="avatar-date">8 de mayo del 2019</p>
+      <p class="avatar-bio">Alguien ya a leido Tú & yo, aquí, ahora de Jay Asher porque lo recom ...</p>
+      <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
+    </div>
+
+    <div class="container-post">
+      <p class="avatar-name">Daniela Ronda</p>
+      <img class="container-post-avatar " src="img/avatar.jpg" alt="Imagen de un avatar para comenr¿tar en el blog">
+      <p class="avatar-date">8 de mayo del 2019</p>
+      <p class="avatar-bio">Hola soy de Costa Rica y queria recomendar les este libro y espero que le cambie la vida
+        como me lo hizo a mi.</p>
+      <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
+    </div>
+
+    <div class="container-post">
+      <p class="avatar-name">Melissa Rojas</p>
+      <img class="container-post-avatar " src="img/avatar2.jpg" alt="">
+      <p class="avatar-date">8 de mayo del 2019</p>
+      <p class="avatar-bio">Hoy les quiero hablar sobre el nuevo libro que descubrí lla...</p>
+      <button class="btn-post"><a class="link-post-related" href="">Leer más</a></button>
+    </div>
   </div>
 
 
@@ -111,21 +127,21 @@
   <div>
     <h2 class="title-sibar ">Más Populares</h2>
     <div class="sibar-post">
-        <p class="sibar-name">Maria Martines</p>
-        <p class="sibar-date">8 de mayo del 2019</p>
-        <p class="info-post-sibar">Les quiero mostrar el nuevo libro de Cassandra Clare ...</p>
-        <button class="btn-post"><a class="link-post-sibar" href="">Leer más</a></button>
-      </div>
-      <div class="sibar-post">
-        <p class="sibar-name">Marlon Martinez</p>
-        <p class="info-post-sibar">Les quiero mostrar el nuevo libro de Cassandra Clare ...</p>
-        <button class="btn-post"><a class="link-post-sibar" href="">Leer más</a></button>
-      </div>
-      <div class="sibar-post">
-        <p class="sibar-name">Stefanie Cordoba</p>
-        <p class="info-post-sibar">Les quiero mostrar el nuevo libro de Cassandra Clare ...</p>
-        <button class="btn-post"><a class="link-post-sibar" href="">Leer más</a></button>
-      </div>
+      <p class="sibar-name">Maria Martines</p>
+      <p class="sibar-date">8 de mayo del 2019</p>
+      <p class="info-post-sibar">Les quiero mostrar el nuevo libro de Cassandra Clare ...</p>
+      <button class="btn-post"><a class="link-post-sibar" href="">Leer más</a></button>
+    </div>
+    <div class="sibar-post">
+      <p class="sibar-name">Marlon Martinez</p>
+      <p class="info-post-sibar">Les quiero mostrar el nuevo libro de Cassandra Clare ...</p>
+      <button class="btn-post"><a class="link-post-sibar" href="">Leer más</a></button>
+    </div>
+    <div class="sibar-post">
+      <p class="sibar-name">Stefanie Cordoba</p>
+      <p class="info-post-sibar">Les quiero mostrar el nuevo libro de Cassandra Clare ...</p>
+      <button class="btn-post"><a class="link-post-sibar" href="">Leer más</a></button>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -149,7 +165,7 @@
     </div>
     <img class="copyright" src="img/copyright.jpg" alt="">
   </div>
-
+ <script src="./js/script.js"></script>
 </body>
 
 </html>
